@@ -8,9 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@syncfusion/ej2-vue-richtexteditor": "^19.4.54",
+    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.3",
+    "mapbox-gl": "^2.7.0",
     "vue": "^2.6.14",
+    "vue-browser-geolocation": "^1.8.0",
+    "vue-mapbox": "^0.4.1",
     "vue-router": "^3.5.1",
+    "vue2-google-maps": "^0.10.7",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -23,6 +29,8 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
     "vue-template-compiler": "^2.6.14"
   }
 }
