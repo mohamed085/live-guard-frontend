@@ -51,7 +51,11 @@
 
         <b-form class="form" @submit.prevent="register">
           <span class="heading-secondary">Register</span>
-          <h2><b-badge variant="danger" class="badge" v-if="error">{{ error }}</b-badge></h2>
+
+          <div class="messages">
+            <h2 class="messages__error" v-if="error">{{ error }}</h2>
+            <h2 class="messages__success" v-if="success">{{ success }}</h2>
+          </div>
 
           <main class="main-spinner" v-if="isLoading">
             <b-spinner class="spinner mt-5" label="Loading..."></b-spinner>
@@ -196,7 +200,7 @@ export default {
 
       } else {
         this.isLoading = false;
-        await router.push("/verify-account");
+        await router.push("/check-mail");
       }
     }
   }

@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -56,10 +57,10 @@
         <h1 class="heading-primary">
           <span class="heading-primary--main">LiveGuard</span>
           <span class="heading-primary--sub">is where life more safety</span>
-          <h1 class="not-found">Page Not Found</h1>
+          <span class="heading-primary--sub verify-message">Check your inbox</span>
         </h1>
 
-        <router-link to="/" class="btn btn--white btn--animated">Back to Home</router-link>
+        <router-link to="/" class="btn btn--white btn--animated">Home</router-link>
       </div>
     </header>
 
@@ -106,12 +107,11 @@
 
 <script>
 export default {
-  name: "NotFound",
+  name: "CheckEmail",
   methods: {
     logout() {
       this.$store.dispatch('logout');
-    }
-
+    },
   }
 }
 </script>
@@ -135,11 +135,9 @@ export default {
   }
 }
 
-.not-found {
-  font-size: 5rem;
+.verify-message {
   margin-top: 2.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  font-size: 3rem;
+  text-transform: none;
 }
 </style>

@@ -52,8 +52,10 @@
         <b-form class="form" @submit.prevent="login">
           <span class="heading-secondary">Log In</span>
 
-          <h2><b-badge variant="danger" class="badge" v-if="error">{{ error }}</b-badge></h2>
-          <h2><b-badge variant="success" class="badge" v-if="success">{{ success }}</b-badge></h2>
+          <div class="messages">
+            <h2 class="messages__error" v-if="error">{{ error }}</h2>
+            <h2 class="messages__success" v-if="success">{{ success }}</h2>
+          </div>
 
           <main class="main-spinner" v-if="isLoading">
             <b-spinner class="spinner mt-5" label="Loading..."></b-spinner>

@@ -18,6 +18,12 @@ import AddNewChip from "@/views/dashboard/AddNewChip";
 import ChipType from "@/views/dashboard/ChipType";
 import EditChipType from "@/views/dashboard/EditChipType";
 import Chip from "@/views/dashboard/Chip";
+import AddNewVendor from "@/views/dashboard/AddNewVendor";
+import User from "@/views/dashboard/User";
+import Store from "@/views/dashboard/Store";
+import CheckEmail from "@/views/CheckEmail";
+import ForgotPassword from "@/views/ForgotPassword";
+import ResetPassword from "@/views/ResetPassword";
 
 Vue.use(VueRouter)
 
@@ -25,12 +31,18 @@ const routes = [
   { path: '/', component: Home },
   { path: '/login', component: Login },
   { path: '/register', component: Register },
-  { path: '/verify-account', component: VerifyAccount },
+  { path: '/check-mail', component: CheckEmail },
+  { path: '/forgot-password', component: ForgotPassword },
+  { path: '/reset-password/:resetPasswordToken', component: ResetPassword },
+  { path: '/verify/:code', component: VerifyAccount },
   { path: '/dashboard', component: Index,
     children: [
       { path: '/', component: Main },
       { path: '/vendors', component: Vendors },
+      { path: '/add-new-vendor', component: AddNewVendor },
       { path: '/customers', component: Customers },
+      { path: '/user/:id', component: User },
+      { path: '/stores', component: Store },
       { path: '/chip-types', component: ChipTypes },
       { path: '/add-new-chip-type', component: AddNewChipType },
       { path: '/chip-type/:id', component: ChipType },

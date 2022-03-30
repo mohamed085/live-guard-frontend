@@ -16,10 +16,18 @@ import { RichTextEditorPlugin } from '@syncfusion/ej2-vue-richtexteditor';
 
 Vue.use(RichTextEditorPlugin);
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+Vue.use(AOS)
+
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
+  mounted() {
+    AOS.init()
+  },
   render: h => h(App)
 }).$mount('#app')

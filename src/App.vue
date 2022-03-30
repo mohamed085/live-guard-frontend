@@ -67,4 +67,33 @@ html {
   color: $color-primary;
 }
 
+.messages {
+  text-align: center;
+  color: $color-white;
+  margin: 2rem 1rem;
+
+  &__error,
+  &__success {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 3px;
+  }
+
+  &__success {
+    border: 1px solid $color-primary;
+    background-color: $color-primary-light;
+  }
+
+  &__error {
+    border: 1px solid $color-danger;
+    background-color: $color-danger-light;
+
+    &::selection {
+      color: $color-white;
+      background-color: $color-danger;
+    }
+  }
+
+}
+
 </style>

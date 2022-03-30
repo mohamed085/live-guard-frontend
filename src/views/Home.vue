@@ -55,14 +55,124 @@
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">LiveGuard</span>
-          <span class="heading-primary--sub">is where life more safety</span>
+          <span class="heading-primary--sub">The Most Reliable Parental Control App</span>
         </h1>
 
-        <router-link to="/products" class="btn btn--white btn--animated">Discover our products</router-link>
+        <router-link to="/products" class="btn btn--white btn--animated">Download now</router-link>
       </div>
     </header>
 
     <main>
+      <section class="live-guard-features">
+        <div class="row">
+          <div class="col-1-of-2 live-guard-features__box" data-aos="fade-right" data-aos-duration="1500">
+            <h3 class="heading-tertiary u-margin-bottom-small">LiveGuard Features</h3>
+            <div class="d-flex">
+              <h1 class="live-guard-features__title">Location Tracking</h1>
+              <img class="live-guard-features__title-icon" src="../assets/img/icon13.svg">
+            </div>
+            <p>Track kids in real-time and review their location history. Receive instant alerts when
+              kids enter or leave the Geofences.
+            </p>
+            <div class="d-flex mt-5">
+              <router-link to="/products" class="btn--green">Try it free</router-link>
+              <router-link to="/products" class="btn--white">Buy now</router-link>
+            </div>
+            <div class="mt-5">
+              <h2 class="heading-tertiary available">Available on：</h2>
+              <span class="icons">
+                <i class="fab fa-app-store"></i>
+                <i class="fab fa-google-play"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-1-of-2 text-center" data-aos="fade-left" data-aos-duration="1500">
+            <img src="../assets/img/map-phone-e1636424475547.png">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-worry">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Worry About Kids When They Go Out Alone
+          </h2>
+        </div>
+
+        <div class="section-worry__sections">
+          <div data-aos="fade-up" data-aos-duration="1500">
+            <p class="section-worry__paragraph">What should I do if my kids get lost in an unfamiliar place?</p>
+          </div>
+          <div data-aos="fade-down" data-aos-duration="1500">
+            <p class="section-worry__paragraph">Will kids meet unfriendly strangers and be taken to dangerous places?</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500">
+            <p class="section-worry__paragraph">Did my kids leave school privately and skip class without permission?
+
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="live-guard-features">
+        <div class="row">
+          <div class="col-1-of-2 live-guard-features__box" data-aos="fade-right" data-aos-duration="1500">
+            <div class="d-flex">
+              <h1 class="live-guard-features__title">View Kids' Real-Time Location</h1>
+            </div>
+            <p class="live-guard-features__sub-title">Track the current location of your kids. Stop calling kids "where are you?" all the time.</p>
+            <ul>
+              <li>Grasp your kids' real-time location at any time.</li>
+              <li>Check if your kids are in school or at home as required.</li>
+              <li>Know if your kids go to a strange and unsafe place.</li>
+            </ul>
+          </div>
+          <div class="col-1-of-2 text-center" data-aos="fade-left" data-aos-duration="1500">
+            <img src="../assets/img/live-location-tracking-2.png">
+          </div>
+        </div>
+      </section>
+
+      <section class="live-guard-features">
+        <div class="row">
+          <div class="col-1-of-2 text-center" data-aos="fade-right" data-aos-duration="1500">
+            <img src="../assets/img/live-location-tracking-3.png">
+          </div>
+          <div class="col-1-of-2 live-guard-features__box" data-aos="fade-left" data-aos-duration="1500">
+            <div class="d-flex">
+              <h1 class="live-guard-features__title">Check Location History</h1>
+            </div>
+            <p class="live-guard-features__sub-title">View location history timeline to know kids' past routine. Never yell at your kids: "Where have you been?" again.
+            </p>
+            <ul>
+              <li>View your kids' recent activity area.</li>
+              <li>Know where they were at a certain time.</li>
+              <li>Learn where your child often goes.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="live-guard-features">
+        <div class="row">
+          <div class="col-1-of-2 live-guard-features__box" data-aos="fade-right" data-aos-duration="1500">
+            <div class="d-flex">
+              <h1 class="live-guard-features__title">Set Safe Zones</h1>
+            </div>
+            <p class="live-guard-features__sub-title">Create zones like "school" or "home" around specific locations. Get notified when kids break planned routines.</p>
+            <ul>
+              <li>Set the scope of kids' activities.</li>
+              <li>Set up a geofence and set the time range.</li>
+              <li>Receive an alert when the kids leave the set place.</li>
+            </ul>
+          </div>
+          <div class="col-1-of-2 text-center" data-aos="fade-left" data-aos-duration="1500">
+            <img src="../assets/img/live-location-tracking-4.png">
+          </div>
+        </div>
+      </section>
+
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -72,15 +182,14 @@
 
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">You're going to keep other close</h3>
+            <h3 class="heading-tertiary u-margin-bottom-small">GREAT APP FOR MANY PURPOSES!</h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-              ducimus quam nisi exercitationem omnis earum qui.
+              I have used this App off and on for many years and many purposes. They have been at my side the entire time and have helped me through some difficult situations. They are dependable and honest. They can do a lot for any organization. Trust them. TRACKVIEW can do many things including helping you find a lost phone. Yet, it is designed to do much more. You will be amazed at it's different abilities.
             </p>
 
-            <h3 class="heading-tertiary u-margin-bottom-small">New way to save others</h3>
+            <h3 class="heading-tertiary u-margin-bottom-small">AWESOME APP FOR MONITORING</h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
+              I recommend this app for your family safety.... Great app
             </p>
 
             <router-link to="/" class="btn-text">Learn more &rarr;</router-link>
@@ -112,47 +221,49 @@
       </section>
 
       <section class="section-features">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary text-white">
+            Exciting experiences for users
+          </h2>
+          <h1 class="heading-secondary about_feature text-white">LiveGuard is the leading real-time location tracking.</h1>
+        </div>
 
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
-              <i class="feature-box__icon icon-basic-world"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-              </p>
+              <i class="feature-box__icon fas fa-map-marker-alt"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Advanced Location Tracking Services and Visualization</h3>
             </div>
           </div>
 
           <div class="col-1-of-4">
             <div class="feature-box">
-              <i class="feature-box__icon icon-basic-compass"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Find Location</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-              </p>
+              <i class="feature-box__icon fas fa-user-shield"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Create Safe/Unsafe Zones, Check in & send SOS
+              </h3>
             </div>
           </div>
 
           <div class="col-1-of-4">
             <div class="feature-box">
-              <i class="feature-box__icon icon-basic-map"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-              </p>
+              <i class="feature-box__icon fas fa-bell"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Place Alerts
+              </h3>
             </div>
           </div>
 
           <div class="col-1-of-4">
             <div class="feature-box">
-              <i class="feature-box__icon icon-basic-heart"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-              </p>
+              <i class="feature-box__icon fas fa-history"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Location History of your close ones
+              </h3>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -436,4 +547,142 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/sass/main";
+
+.about_feature {
+  text-align: center;
+  padding: 1rem 20% 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.feature-box {
+  height: 28rem;
+}
+
+.feature-box__icon {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.heading-tertiary {
+  line-height: 3rem;
+}
+
+.live-guard-features {
+  margin: 10rem 0 0;
+
+  &__box {
+    padding: 10rem 0;
+  }
+
+  & .heading-tertiary {
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.8rem;
+
+  }
+
+  & .available {
+    font-size: 2rem;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    margin: 1rem 1rem 1rem 0;
+    color: #313131;
+  }
+
+  &__sub-title {
+    padding: 1rem;
+    color: #313131;
+    font-size: 2rem;
+
+  }
+
+  &__title-icon {
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  & .btn--green,
+  & .btn--white {
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 3rem;
+    font-size: $default-font-size;
+    border: 1px solid $color-white;
+  }
+
+  & .btn--green:hover {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+  }
+
+  & .btn--white:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-white;
+  }
+
+  & ul {
+    padding: 1rem 0 1rem 4rem;
+    list-style: none;
+
+    & li {
+      margin-bottom: 1rem;
+
+      &::before {
+        content: "\2022";
+        color: $color-primary;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+}
+
+.icons i {
+  color: $color-grey-dark;
+  margin: 0 .5rem;
+  font-size: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.section-worry {
+  margin-top: 10rem;
+
+  &__sections {
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    & div {
+      width: 33%;
+      padding: 0 8%;
+      text-align: center !important;
+      color: #313131;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.col-1-of-2 {
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+}
 </style>
