@@ -116,7 +116,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = "http://localhost:8081/api/chips";
+      let url = "https://live-guard.herokuapp.com/api/chips";
 
       await fetch(url, requestOptions)
           .then(response => response.json())
