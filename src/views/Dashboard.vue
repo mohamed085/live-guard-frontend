@@ -21,84 +21,20 @@
 
           <nav class="user-nav">
 
-            <div class="user-nav__icon-box" @click="showNotifications = !showNotifications">
+            <div class="user-nav__icon-box">
               <b-icon icon="bell-fill" class="rounded p-2 user-nav__icon" font-scale="2"></b-icon>
               <span class="user-nav__notification">7</span>
             </div>
-
-            <transition mode="fade" v-if="showNotifications">
-              <div class="notifications">
-                <router-link class="notifications__notification" to="#">
-                  <div class="notifications__notification__user-avatar">
-                    <b-avatar src="https://placekitten.com/300/300" size="6rem"></b-avatar>
-                  </div>
-                  <div class="notifications__notification__content">
-                    <div class="notifications__notification__content__sender">Mohamed Emad</div>
-                    <div class="notifications__notification__content__content">
-                      <p>
-                        When using a module bundler and project relative image URLs, please refer to the Component img src resolving reference section for additional details. When using a module bundler and project relative image URLs, please refer to the Component img src resolving reference section for additional details.
-                      </p>
-                    </div>
-                    <div class="notifications__notification__content__date">39 minutes ago</div>
-                  </div>
-                </router-link>
-                <router-link class="notifications__notification" to="#">
-                  <div class="notifications__notification__user-avatar">
-                    <b-avatar src="https://placekitten.com/300/300" size="6rem"></b-avatar>
-                  </div>
-                  <div class="notifications__notification__content">
-                    <div class="notifications__notification__content__sender">Mohamed Emad</div>
-                    <div class="notifications__notification__content__content">
-                      <p>
-                        When using a module bundler and project relative image URLs.
-                      </p>
-                    </div>
-                    <div class="notifications__notification__content__date">39 minutes ago</div>
-                  </div>
-                </router-link>
-                <router-link class="notifications__notification" to="#">
-                  <div class="notifications__notification__user-avatar">
-                    <b-avatar src="https://placekitten.com/300/300" size="6rem"></b-avatar>
-                  </div>
-                  <div class="notifications__notification__content">
-                    <div class="notifications__notification__content__sender">Mohamed Emad</div>
-                    <div class="notifications__notification__content__content">
-                      <p>
-                        When using a module bundler and project relative image URLs.
-                      </p>
-                    </div>
-                    <div class="notifications__notification__content__date">39 minutes ago</div>
-                  </div>
-                </router-link>
-              </div>
-            </transition>
 
             <div class="user-nav__icon-box">
               <b-icon icon="inbox-fill" class="rounded p-2 user-nav__icon" font-scale="2"></b-icon>
               <span class="user-nav__notification">13</span>
             </div>
 
-            <div class="user-nav__user" @click="showUserDetails = !showUserDetails">
+            <div class="user-nav__user">
               <b-avatar src="https://i.pinimg.com/750x/c7/6d/96/c76d965a245584537bbc55eaa07440d8.jpg" class="user-nav__user-photo" size="4rem"></b-avatar>
               <span class="user-nav__user-name">{{ this.$store.getters.name }}</span>
             </div>
-            <transition mode="fade" v-if="showUserDetails">
-              <div class="user-details">
-                <router-link to="/profile" class="user-details__user-detail d-flex">
-                  <b-avatar class="user-details__avatar" src="https://i.pinimg.com/750x/c7/6d/96/c76d965a245584537bbc55eaa07440d8.jpg" size="8rem"></b-avatar>
-                  <div class="">
-                    <h2 class="mt-3 user-details__name">{{ this.$store.getters.name }}</h2>
-                    <p>See your profile</p>
-                  </div>
-                </router-link>
-                <router-link to="/profile-update" class="user-details__user-detail">
-                  <i class="user-details__icon fas fa-edit"></i> Update profile
-                </router-link>
-                <div @click="logout" class="user-details__user-detail">
-                  <i class="user-details__icon fas fa-sign-out-alt"></i> Log out
-                </div>
-              </div>
-            </transition>
 
           </nav>
         </header>
@@ -108,73 +44,106 @@
             <ul class="side-nav">
               <li class="side-nav__item">
                 <router-link to="/dashboard" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
+                  <i class="fas fa-home"></i>
                   <span>Dashboard</span>
                 </router-link>
               </li>
+
               <li class="side-nav__item">
-                <router-link to="/vendors" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
-                  <span>Vendors</span>
+                <router-link to="/chip-versions" class="side-nav__link">
+                  <i class="fas fa-microchip"></i>
+                  <span>Chip versions</span>
                 </router-link>
               </li>
-              <li class="side-nav__item">
-                <router-link to="/customers" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
-                  <span>Customers</span>
-                </router-link>
-              </li>
-              <li class="side-nav__item">
-                <router-link to="/stores" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
-                  <span>Stores</span>
-                </router-link>
-              </li>
-              <li class="side-nav__item">
-                <router-link to="/chip-types" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
-                  <span>Chip Types</span>
-                </router-link>
-              </li>
+
               <li class="side-nav__item">
                 <router-link to="/chips" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
+                  <i class="fas fa-microchip"></i>
                   <span>Chips</span>
                 </router-link>
               </li>
+
+              <li class="side-nav__item">
+                <router-link to="/customers" class="side-nav__link">
+                  <i class="fas fa-users"></i>
+                  <span>Customers</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item">
+                <router-link to="/users" class="side-nav__link">
+                  <i class="fas fa-users"></i>
+                  <span>Users</span>
+                </router-link>
+              </li>
+
               <li class="side-nav__item">
                 <router-link to="/orders" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
+                  <i class="fas fa-cart-plus"></i>
                   <span>Orders</span>
                 </router-link>
               </li>
+
+              <li class="side-nav__item">
+                <router-link to="/shipping-rate" class="side-nav__link">
+                  <i class="fas fa-truck-container"></i>
+                  <span>Shipping Rate</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item">
+                <router-link to="/stores" class="side-nav__link">
+                  <i class="fas fa-store-alt"></i>
+                  <span>Stores</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item">
+                <router-link to="/articles" class="side-nav__link">
+                  <i class="fas fa-newspaper"></i>
+                  <span>Articles</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item">
+                <router-link to="/articles" class="side-nav__link">
+                  <i class="fas fa-file-chart-line"></i>
+                  <span>Sales report</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item">
+                <router-link to="/articles" class="side-nav__link">
+                  <i class="fas fa-question"></i>
+                  <span>Questions</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item">
+                <router-link to="/articles" class="side-nav__link">
+                  <i class="fas fa-inbox"></i>
+                  <span>Contact Messages</span>
+                </router-link>
+              </li>
+
               <li class="side-nav__item">
                 <router-link to="/setting" class="side-nav__link">
-                  <svg class="side-nav__icon">
-                    <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
-                  </svg>
-                  <span>Setting</span>
+                  <i class="fas fa-cogs"></i>
+                  <span>Settings</span>
+                </router-link>
+              </li>
+
+              <li class="side-nav__item" @click="logout">
+                <router-link to="#" class="side-nav__link">
+                  <i class="fas fa-sign-out"></i>
+                  <span>Logout</span>
                 </router-link>
               </li>
 
             </ul>
 
             <div class="legal">
-              &copy; 2022 by live guard group. All rights reserved.
+              &copy; 2022 by liveGuard group. All rights reserved.
             </div>
 
           </nav>
@@ -234,12 +203,6 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Dashboard",
-  data() {
-    return {
-      showNotifications: false,
-      showUserDetails: false
-    }
-  },
   created() {
     if (!this.$store.getters.isAuthenticated && !this.$store.getters.isAdmin) {
       this.$router.replace("/")
@@ -316,115 +279,6 @@ export default {
   position: relative;
 }
 
-.notifications {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  background-color: #dddddd;
-  padding: 0 0 1rem;
-  top: calc(100%);
-  left: -20%;
-  width: 35rem;
-  height: max-content;
-  border-radius: 0 0 15px 15px;
-  z-index: 20;
-
-  &__notification {
-    text-decoration: none;
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid $color-white;
-    max-height: 20rem;
-    overflow: auto;
-    color: $color-grey-dark;
-    padding: 1rem;
-    margin: 0;
-    border-bottom: 1px solid #cfcfcf;
-
-    &:hover {
-      background-color: #cfcfcf;
-    }
-
-    &__user-avatar {
-      margin: 0 .8% 0 0;
-      width: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__content {
-      width: 69%;
-
-      &__sender {
-        font-size: 1.8rem;
-        font-weight: 600;
-        padding: 0 0 .5rem 0;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-      }
-
-
-      &__content p {
-        font-size: 1.4rem;
-        text-align: justify;
-      }
-    }
-
-  }
-
-  &:hover {
-    background-color: #dddddd;
-  }
-}
-
-.user-details {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  background-color: #dddddd;
-  padding: 0 0 1rem;
-  top: calc(100%);
-  left: 20%;
-  width: max-content;
-  height: max-content;
-  border-radius: 0 0 15px 15px;
-  z-index: 20;
-
-
-  &__user-detail {
-    color: $color-grey-dark;
-    text-decoration: none;
-    padding: 1rem;
-    margin: 0;
-    border-bottom: 1px solid #cfcfcf;
-    width: 100%;
-
-    &:hover {
-      background-color: #cfcfcf;
-    }
-  }
-
-  &__name {
-    font-size: 1.6rem;
-    font-weight: 500;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  &__avatar {
-    margin: 0 1rem;
-  }
-  &:hover {
-    background-color: #dddddd;
-  }
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: all .5s ease-out;
@@ -433,5 +287,14 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+
+.side-nav__link i {
+  margin: 0 1.5rem 0 0;
+}
+
+.logo {
+  text-decoration: none;
+}
+
 
 </style>

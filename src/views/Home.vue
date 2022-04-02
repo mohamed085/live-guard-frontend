@@ -58,7 +58,7 @@
           <span class="heading-primary--sub">The Most Reliable Parental Control App</span>
         </h1>
 
-        <router-link to="/products" class="btn btn--white btn--animated">Download now</router-link>
+        <router-link to="/" class="btn btn--white btn--animated">Download now</router-link>
       </div>
     </header>
 
@@ -428,7 +428,7 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <router-link to="/blogs" class="btn-text">Read all blogs &rarr;</router-link>
+          <router-link to="/blogs" class="btn-text">Read all reviews &rarr;</router-link>
         </div>
       </section>
 
@@ -436,10 +436,10 @@
         <div class="row">
           <div class="book w-100">
             <div class="book__form">
-              <form action="#" class="form">
+              <b-form @submit.prevent="" class="form">
                 <div class="u-margin-bottom-medium">
                   <h2 class="heading-secondary">
-                    Start buying now
+                    Contact us
                   </h2>
                 </div>
 
@@ -448,40 +448,20 @@
                   <label for="name" class="form__label">Full name</label>
                 </div>
 
-                <div class="form__group"  >
+                <div class="form__group">
                   <input type="email" class="form__input" placeholder="Email address" id="email" required>
                   <label for="email" class="form__label">Email address</label>
                 </div>
 
-                <div class="form__group u-margin-bottom-medium d-flex">
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="version1" name="size">
-                    <label for="version1" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Version 1
-                    </label>
-                  </div>
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="version2" name="size">
-                    <label for="version2" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Version 1
-                    </label>
-                  </div>
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="version3" name="size">
-                    <label for="version3" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Version 1
-                    </label>
-                  </div>
-
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Message" id="message" required>
+                  <label for="message" class="form__label">Message</label>
                 </div>
 
                 <div class="form__group">
-                  <button class="btn btn--green">Next step &rarr;</button>
+                  <button type="submit" class="btn btn--green">Send &rarr;</button>
                 </div>
-              </form>
+              </b-form>
             </div>
           </div>
         </div>

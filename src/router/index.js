@@ -5,28 +5,21 @@ import Login from "@/views/Login";
 import NotFound from "@/views/NotFound";
 import Register from "@/views/Register";
 import VerifyAccount from "@/views/VerifyAccount";
-import Index from "@/views/Dashboard";
+import Dashboard from "@/views/Dashboard";
 import Main from "@/views/dashboard/Main";
-import Vendors from "@/views/dashboard/Vendors";
-import Customers from "@/views/dashboard/Customers";
-import ChipTypes from "@/views/dashboard/ChipTypes";
-import Chips from "@/views/dashboard/Chips";
-import Orders from "@/views/dashboard/Orders";
-import Setting from "@/views/dashboard/Setting";
-import AddNewChipType from "@/views/dashboard/AddNewChipType";
-import AddNewChip from "@/views/dashboard/AddNewChip";
-import ChipType from "@/views/dashboard/ChipType";
-import EditChipType from "@/views/dashboard/EditChipType";
-import Chip from "@/views/dashboard/Chip";
-import AddNewVendor from "@/views/dashboard/AddNewVendor";
-import User from "@/views/dashboard/User";
-import Store from "@/views/dashboard/Store";
 import CheckEmail from "@/views/CheckEmail";
 import ForgotPassword from "@/views/ForgotPassword";
 import ResetPassword from "@/views/ResetPassword";
+import ChipVersions from "@/views/dashboard/chip-verions/ChipVersions";
+import AddNewChipVersion from "@/views/dashboard/chip-verions/AddNewChipVersion";
+import ChipVersion from "@/views/dashboard/chip-verions/ChipVersion";
+import EditChipVersion from "@/views/dashboard/chip-verions/EditChipVersion";
+import Chips from "@/views/dashboard/chips/Chips";
+import AddNewChip from "@/views/dashboard/chips/AddNewChip";
 
 Vue.use(VueRouter)
 
+let Chip;
 const routes = [
   { path: '/', component: Home },
   { path: '/login', component: Login },
@@ -35,23 +28,15 @@ const routes = [
   { path: '/forgot-password', component: ForgotPassword },
   { path: '/reset-password/:resetPasswordToken', component: ResetPassword },
   { path: '/verify/:code', component: VerifyAccount },
-  { path: '/dashboard', component: Index,
+  { path: '/dashboard', component: Dashboard,
     children: [
       { path: '/', component: Main },
-      { path: '/vendors', component: Vendors },
-      { path: '/add-new-vendor', component: AddNewVendor },
-      { path: '/customers', component: Customers },
-      { path: '/user/:id', component: User },
-      { path: '/stores', component: Store },
-      { path: '/chip-types', component: ChipTypes },
-      { path: '/add-new-chip-type', component: AddNewChipType },
-      { path: '/chip-type/:id', component: ChipType },
-      { path: '/edit-chip-type/:id', component: EditChipType },
+      { path: '/chip-versions', component: ChipVersions },
+      { path: '/add-new-chip-version', component: AddNewChipVersion },
+      { path: '/chip-version/:id', component: ChipVersion },
+      { path: '/edit-chip-version/:id', component: EditChipVersion },
       { path: '/chips', component: Chips },
-      { path: '/chip/:id', component: Chip },
       { path: '/add-new-chip', component: AddNewChip },
-      { path: '/orders', component: Orders },
-      { path: '/setting', component: Setting },
     ]},
 
   { path: '/:notFound(.*)', component: NotFound }
