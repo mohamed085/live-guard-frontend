@@ -16,6 +16,8 @@ import ChipVersion from "@/views/dashboard/chip-verions/ChipVersion";
 import EditChipVersion from "@/views/dashboard/chip-verions/EditChipVersion";
 import Chips from "@/views/dashboard/chips/Chips";
 import AddNewChip from "@/views/dashboard/chips/AddNewChip";
+import Users from "@/views/dashboard/users/Users";
+import AddNewUser from "@/views/dashboard/users/AddNewUser";
 
 Vue.use(VueRouter)
 
@@ -37,6 +39,8 @@ const routes = [
       { path: '/edit-chip-version/:id', component: EditChipVersion },
       { path: '/chips', component: Chips },
       { path: '/add-new-chip', component: AddNewChip },
+      { path: '/users', component: Users },
+      { path: '/add-new-user', component: AddNewUser },
     ]},
 
   { path: '/:notFound(.*)', component: NotFound }

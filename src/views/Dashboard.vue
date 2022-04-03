@@ -64,13 +64,6 @@
               </li>
 
               <li class="side-nav__item">
-                <router-link to="/customers" class="side-nav__link">
-                  <i class="fas fa-users"></i>
-                  <span>Customers</span>
-                </router-link>
-              </li>
-
-              <li class="side-nav__item">
                 <router-link to="/users" class="side-nav__link">
                   <i class="fas fa-users"></i>
                   <span>Users</span>
