@@ -34,7 +34,6 @@ $color-gray: #777;
   box-sizing: border-box;
 }
 
-
 html {
   font-size: 10px;
 }
@@ -47,24 +46,24 @@ html {
   color: $color-gray;
 }
 
-
 ::selection {
   background-color: $color-primary;
   color: $color-white;
 }
 
-.main-spinner {
+.loading {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0 !important;
-}
 
-.spinner {
-  width: 5rem !important;
-  height: 5rem !important;
-  color: $color-primary;
+  &__spinner {
+    color: $color-primary;
+    width: 15rem !important;
+    height: 15rem !important;
+  }
+
 }
 
 .messages {

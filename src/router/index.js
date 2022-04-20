@@ -6,18 +6,9 @@ import NotFound from "@/views/NotFound";
 import Register from "@/views/Register";
 import VerifyAccount from "@/views/VerifyAccount";
 import Dashboard from "@/views/Dashboard";
-import Main from "@/views/dashboard/Main";
 import CheckEmail from "@/views/CheckEmail";
 import ForgotPassword from "@/views/ForgotPassword";
 import ResetPassword from "@/views/ResetPassword";
-import ChipVersions from "@/views/dashboard/chip-verions/ChipVersions";
-import AddNewChipVersion from "@/views/dashboard/chip-verions/AddNewChipVersion";
-import ChipVersion from "@/views/dashboard/chip-verions/ChipVersion";
-import EditChipVersion from "@/views/dashboard/chip-verions/EditChipVersion";
-import Chips from "@/views/dashboard/chips/Chips";
-import AddNewChip from "@/views/dashboard/chips/AddNewChip";
-import Users from "@/views/dashboard/users/Users";
-import AddNewUser from "@/views/dashboard/users/AddNewUser";
 
 Vue.use(VueRouter)
 
@@ -32,15 +23,7 @@ const routes = [
   { path: '/verify/:code', component: VerifyAccount },
   { path: '/dashboard', component: Dashboard,
     children: [
-      { path: '/', component: Main },
-      { path: '/chip-versions', component: ChipVersions },
-      { path: '/add-new-chip-version', component: AddNewChipVersion },
-      { path: '/chip-version/:id', component: ChipVersion },
-      { path: '/edit-chip-version/:id', component: EditChipVersion },
-      { path: '/chips', component: Chips },
-      { path: '/add-new-chip', component: AddNewChip },
-      { path: '/users', component: Users },
-      { path: '/add-new-user', component: AddNewUser },
+
     ]},
 
   { path: '/:notFound(.*)', component: NotFound }
